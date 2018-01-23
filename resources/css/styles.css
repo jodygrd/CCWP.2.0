@@ -18,12 +18,18 @@ html {
 /* -----REUSABLE ELEMENTS------ */
 /* ---------------------------- */
 
+.row {
+  max-width: 1140px;
+  margin: 5px auto;
+}
+
 
 h1 {
   font-weight: 400;
   font-size: 400%;
+  line-height: 120%;
   text-shadow: 3px 5px #000000;
-  line-height: 120%
+
 }
 
 a {
@@ -35,6 +41,26 @@ section {
   padding: 100px;
 }
 
+/* ---buttons --- */
+
+.btn {
+  display: inline-block;
+}
+
+.btn-down {
+  font-weight: 400;
+  font-size: 140%;
+  text-shadow: 2px 2px black;
+  margin-left: -25px;
+  border-radius: 2px;
+  border-bottom: 2px solid white;
+  letter-spacing: 1.5px
+}
+
+.btn-down:hover {
+  border-bottom: 4px solid red;
+  transition: border-bottom 0.1s;
+}
 
 /* ---------------------------- */
 /* -----NAVBAR - DROPDOWN------ */
@@ -104,6 +130,21 @@ section {
 /* -----HEADER - HERO TEXT------ */
 /* ---------------------------- */
 
+.urgent {
+  position: fixed;
+  font-size: 90%;
+  letter-spacing: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: yellow;
+  color: #000;
+  border: 2px solid black;
+  padding: 2px;
+  font-weight: 400
+}
+
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.13)), url(img/graphic.png);
   background-size: cover;
@@ -123,7 +164,6 @@ header {
   color: rgba(0, 0, 0, 0);
   border-right: 20px solid #222222;
   top: 0;
-  z-index: 
 }
 
 
@@ -131,7 +171,63 @@ header {
   text-align: center;
   width: 80%;
   margin-left: 10%;
-  margin-top: 8%;
   position: relative;
 }
+
+
+
+/*---------------------------------------------*/
+/*GET INVOLVED*/
+/*---------------------------------------------*/
+
+.section-get-involved {
+  background-color: #1a1a1a;
+}
+
+.involved-box {
+  color: black;
+  font-weight: 300;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #ebebeb
+}
+
+.involved-box div {
+  padding: 15px;
+  border-bottom: 2px solid #e3e3e3;
+  text-align: center;
+}
+
+.involved-box div:first-child {
+  background-color: #fcfcfc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.involved-box div:last-child {
+  border-bottom: none;
+}
+
+.action {
+  font-size: 300%;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 80%
+  
+}
+
+.involved-box ul {
+  list-style: none;
+  text-align: left;
+  line-height: 150%
+}
+
+li i {
+  margin-right: 5px;
+}
+
 
