@@ -10,7 +10,7 @@ html {
   color: #fffaeb;
   text-rendering: optimizeLegibility;
   font-family: 'Raleway', 'Arial', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 1px;
 }
 
@@ -21,7 +21,8 @@ html {
 
 h1 {
   font-weight: 400;
-  font-size: 400%
+  font-size: 300%;
+  text-shadow: 2px 3px #000000;
 }
 
 a {
@@ -29,34 +30,38 @@ a {
   color: #fffaeb;
 }
 
+section {
+  padding: 100px;
+}
 
 
 /* ---------------------------- */
 /* -----NAVBAR - DROPDOWN------ */
 /* ---------------------------- */
 
-nav {
-  background-color: #222222;
-}
 
 
-.nav-logo {
-  
+#not-a-logo {
+  margin-top: 10px;
+  border: 3px solid #ffffff;
+  width: 20%;
+  margin-left: 1%;
 }
 
 .top-nav {
   float: right;
+  text-transform: uppercase;
+  margin-top: 20px
 }
 
-.droptitle {
-  text-transform: uppercase;
-}
+
 
 .droptitle {
   display: inline-block;
   position: relative;
-  margin: 5px;
+  margin: 10px;
   border-bottom: 2px solid transparent;
+  z-index: 2;
 
 }
 
@@ -66,13 +71,13 @@ nav {
   visibility: hidden;
   list-style: none;
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .droptitle:hover .dropdown-content { 
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.2s;
+  transition: opacity 0.3s;
 }
 
 .droptitle:hover {
@@ -81,19 +86,17 @@ nav {
 }
 
 .dropdown-content li {
-  background-color: #222222;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid #4e2323;
+  margin-top: 5px;
 }
 
-.dropdown-content li:first-child {
-  margin-top: 5px;
-  
-}
 
 .dropdown-content li:hover{
   border-bottom: 2px solid red;
   transition: border-bottom 0.2s;
 }
+
+.a-donate { border-bottom: 1px solid red;;}
 
 
 /* ---------------------------- */
@@ -101,17 +104,31 @@ nav {
 /* ---------------------------- */
 
 header {
-  background-image: url(img/graphic.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.13)), url(img/graphic.png);
   background-size: cover;
-  height: 95vh
+  height: 100vh;
+  position: relative;  
+}
 
+.bars-box {
+  margin-left: 30%
+}
+
+
+.bars {
+  height: 100vh;
+  width: 10px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  border-right: 20px solid #222222;
+  top: 0;
+  z-index: 
 }
 
 
 .hero-text-box {
-  text-align: center;
-  padding-top: 150px;
-  z-index: 1
+  width: 40%;
+  padding-top: 8%;
+  margin-left: 1%;
+  position: relative;
 }
-
-
