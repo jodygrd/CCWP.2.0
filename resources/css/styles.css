@@ -9,8 +9,9 @@ html {
   background-color: #222222;
   color: #fffaeb;
   text-rendering: optimizeLegibility;
-  font-family: 'Catamaran', 'Arial', sans-serif;
-  font-weight: 400
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 /* ---------------------------- */
@@ -19,6 +20,98 @@ html {
 
 
 h1 {
-  font-family: 'Bevan', cursive;
+  font-weight: 400;
+  font-size: 400%
+}
+
+a {
+  text-decoration: none;
+  color: #fffaeb;
+}
+
+
+
+/* ---------------------------- */
+/* -----NAVBAR - DROPDOWN------ */
+/* ---------------------------- */
+
+nav {
+  background-color: #222222;
+}
+
+
+.nav-logo {
+  
+}
+
+.top-nav {
+  float: right;
+}
+
+.droptitle {
+  text-transform: uppercase;
+}
+
+.droptitle {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  border-bottom: 2px solid transparent;
 
 }
+
+
+.dropdown-content {
+  position: absolute;
+  visibility: hidden;
+  list-style: none;
+  opacity: 0;
+  z-index: 1;
+}
+
+.droptitle:hover .dropdown-content { 
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.droptitle:hover {
+  border-bottom: 2px solid red;
+  transition: border-bottom 0.2s
+}
+
+.dropdown-content li {
+  background-color: #222222;
+  border-bottom: 2px solid transparent;
+}
+
+.dropdown-content li:first-child {
+  margin-top: 5px;
+  
+}
+
+.dropdown-content li:hover{
+  border-bottom: 2px solid red;
+  transition: border-bottom 0.2s;
+}
+
+
+/* ---------------------------- */
+/* -----HEADER - HERO TEXT------ */
+/* ---------------------------- */
+
+header {
+  background-image: url(img/graphic.png);
+  background-size: cover;
+  height: 95vh
+
+}
+
+
+.hero-text-box {
+  text-align: center;
+  padding-top: 150px;
+  z-index: 1
+}
+
+
