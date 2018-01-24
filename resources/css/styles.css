@@ -24,12 +24,29 @@ html {
 }
 
 
-h1 {
+h1, h2 {
   font-weight: 400;
-  font-size: 400%;
   line-height: 120%;
   text-shadow: 3px 5px #000000;
+  text-align: center;
+}
 
+h1 {
+  font-size: 400%;
+}
+
+h2 {
+  padding: 20px auto;
+  font-size: 250%;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #b00;
+  content: " ";
+  margin: 25px auto;
 }
 
 a {
@@ -60,6 +77,23 @@ section {
 .btn-down:hover {
   border-bottom: 4px solid red;
   transition: border-bottom 0.1s;
+}
+
+.btn-full, 
+.btn-ghost {
+  border: 2px solid #b00;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.btn-full {
+  background-color: #b00;
+}
+
+.btn-full:hover,
+.btn-ghost:hover {
+  border: 2px solid red;
+  background-color: red;
 }
 
 /* ---------------------------- */
@@ -175,20 +209,36 @@ header {
 }
 
 
+/* ---------------------------- */
+/* -----WHAT WE DO --------- */
+/* ---------------------------- */
+
+
+
+/* ---------------------------- */
+/* ----- OUR MISSION ---------- */
+/* ---------------------------- */
+
+.section-mission {
+  background-image: linear-gradient(#fff, #000) url(img/chainlink1-andrew-schultz-440694.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
 
 /*---------------------------------------------*/
 /*GET INVOLVED*/
 /*---------------------------------------------*/
 
 .section-get-involved {
-  background-color: #1a1a1a;
+  background-color: #222222;
 }
 
 .involved-box {
-  color: black;
+  color: #fff;
   font-weight: 300;
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: #121212;
   width: 90%;
   margin-left: 5%;
   box-shadow: 0 2px 2px #ebebeb
@@ -201,7 +251,6 @@ header {
 }
 
 .involved-box div:first-child {
-  background-color: #fcfcfc;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -213,6 +262,7 @@ header {
 .action {
   font-size: 300%;
   text-align: center;
+  display: inline-block;
 }
 
 .tagline {
@@ -230,4 +280,14 @@ li i {
   margin-right: 5px;
 }
 
+.action-icon {
+  display: inline-block;
+  width: 25%;
+  padding-right: 5%
+  
+}
+
+.join {
+  margin-bottom: -3%
+}
 
