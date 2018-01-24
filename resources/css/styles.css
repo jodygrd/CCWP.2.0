@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   padding: 20px auto;
-  font-size: 250%;
+  font-size: 200%;
 }
 
 h2:after {
@@ -220,13 +220,18 @@ header {
 /* ---------------------------- */
 
 .section-mission {
-  background-image: linear-gradient(rgba(255, 0, 0, 0.27), rgba(255, 193, 93, 0.24)), url(img/chainlink1-andrew-schultz-440694.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(img/chainlink2-yannik-wenk-267315.jpg);
   background-size: cover;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
-.mission {
-  width:  30%
+
+.section-mission p {
+  text-align: justify;
+  width:  35%;
+  font-weight: 400;
+  margin: 0 auto;
+  line-height: 120%
 }
 
 /*---------------------------------------------*/
