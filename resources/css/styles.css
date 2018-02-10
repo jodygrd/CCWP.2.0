@@ -69,14 +69,16 @@ section {
   font-weight: 400;
   font-size: 140%;
   text-shadow: 2px 2px black;
-  margin-left: -25px;
   border-radius: 2px;
   border-bottom: 2px solid white;
-  letter-spacing: 1.5px
+  letter-spacing: 1.5px;
+  margin-left: -25px;
 }
 
+
+
 .btn-down:hover {
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid #e74c3c;
   transition: border-bottom 0.1s;
 }
 
@@ -85,16 +87,19 @@ section {
   border: 2px solid #b00;
   border-radius: 20px;
   padding: 5px 10px;
+  color: black;
 }
 
 .btn-full {
   background-color: #b00;
+  color: #fffaeb
 }
 
 .btn-full:hover,
 .btn-ghost:hover {
-  border: 2px solid red;
-  background-color: red;
+  border: 2px solid #e74c3c;
+  background-color: #e74c3c;
+  color: #fffaeb
 }
 
 /* ---------------------------- */
@@ -113,7 +118,7 @@ section {
 .top-nav {
   float: right;
   text-transform: uppercase;
-  margin-top: 5%
+  margin-top: 4%
 }
 
 
@@ -136,29 +141,33 @@ section {
   z-index: 2;
 }
 
-.droptitle:hover .dropdown-content { 
+.droptitle:hover,
+.droptitle:active {
+  background-color: #222222;
+  border-bottom: 2px solid #e74c3c;
+  transition: border-bottom 0.2s
+}
+
+.droptitle:hover .dropdown-content {
+  background-color: #222222;
   visibility: visible;
   opacity: 1;
   transition: opacity 0.3s;
-}
-
-.droptitle:hover {
-  border-bottom: 2px solid red;
-  transition: border-bottom 0.2s
+  border-top: 2px solid #e74c3c;
+  border-radius: 5px;
 }
 
 .dropdown-content li {
   border-bottom: 2px solid #4e2323;
-  margin-top: 5px;
+  padding: 2px 2px;
 }
 
-
 .dropdown-content li:hover{
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #e74c3c;
   transition: border-bottom 0.2s;
 }
 
-.a-donate { border-bottom: 1px solid red;;}
+.a-donate { border-bottom: 1px solid #e74c3c;;}
 
 
 /* ---------------------------- */
@@ -169,10 +178,10 @@ section {
   position: fixed;
   font-size: 90%;
   letter-spacing: 0;
-  bottom: 0;
-  right: 0;
+  bottom: 0px;
+  right: 0px;
   z-index: 2;
-  background-color: yellow;
+  background-color: #f1c40f;
   color: #000;
   border: 2px solid black;
   padding: 2px;
@@ -215,6 +224,38 @@ header {
 /* ---------------------------- */
 
 
+.section-what-we-do {
+  text-align: center;
+}
+
+.div-what-we-do {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 150%;
+  font-size: 120%;
+}
+
+p span {
+  font-size: 125%;
+  font-weight: 700;
+  color: #e74c3c
+}
+
+
+
+.div-leave-homepage {
+  margin: 25px auto;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.programs-btn {
+  text-decoration: underline;
+}
+
+.programs-btn:hover {
+  color: #f1c40f;
+}
 
 /* ---------------------------- */
 /* ----- OUR MISSION ---------- */
@@ -244,17 +285,17 @@ header {
 }
 
 .involved-box {
-  color: #fff;
+  color: black;
   font-weight: 300;
-  background-color: #121212;
+  background-color: #fffcf3;
   width: 90%;
-  border: 3px solid transparent;
+  border: 3px solid #3e3e3e;
   border-radius: 5px;
   margin-left: 5%;
 }
 
 .involved-box:hover {
-  border: 3px solid #b00;
+  border: 3px solid #c0392b;
   transition: border 0.2s
   
 }
@@ -306,3 +347,34 @@ li i {
   margin-bottom: -3%
 }
 
+.give {
+  margin-bottom: -1%
+}
+
+
+
+/*---------------------------------------------*/
+/*Footer*/
+/*---------------------------------------------*/
+
+footer {
+  padding-top: 25px;
+}
+
+.bottom-nav {
+  font-size: 65%;
+  font-weight: 100
+}
+
+.bottom-nav ul {
+  list-style: none;
+}
+
+.footer-contact-info {
+  display: inline-block;
+  float: right;
+}
+
+.footer-contact-info ul {
+  list-style: none;
+}
