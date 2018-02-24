@@ -108,17 +108,11 @@ section {
 
 
 
-#not-a-logo {
-  margin-top: 1%;
-  border: 3px solid #ffffff;
-  width: 20%;
-  margin-left: 1%;
-}
-
 .top-nav {
-  float: right;
   text-transform: uppercase;
-  margin-top: 4%
+  margin-top: 10px;
+  margin-right: 100px;
+  float: right;
 }
 
 
@@ -167,7 +161,7 @@ section {
   transition: border-bottom 0.2s;
 }
 
-.a-donate { border-bottom: 1px solid #e74c3c;;}
+.a-donate { border-bottom: 1px solid #e74c3c;}
 
 
 /* ---------------------------- */
@@ -215,6 +209,7 @@ header {
   text-align: center;
   width: 80%;
   margin-left: 10%;
+  margin-top: 150px;
   position: relative;
 }
 
